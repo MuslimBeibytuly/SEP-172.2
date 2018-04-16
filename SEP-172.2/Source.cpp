@@ -16,12 +16,22 @@ public:
 	}
 };
 
-int main() {
-	Human h1, h2;
-	h1.name = "LOL";
-	h2.name = "QWERTY";
-	h1.hello();
-	h2.hello();
+class Circle 
+{
+public:
+	double radius;
+
+	double getArea() 
+	{
+		return 3.14 * radius * radius;
+	}
+};
+
+int main() 
+{
+	Circle c;
+	c.radius = 5;
+	cout << c.getArea();
 	system("pause");
 	return 0;
 }
