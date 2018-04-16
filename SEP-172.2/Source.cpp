@@ -18,19 +18,26 @@ public:
 
 class Circle 
 {
-public:
+private:
 	double radius;
-
+public:
 	double getArea() 
 	{
 		return 3.14 * radius * radius;
+	}
+	void setRadius(double _radius) 
+	{
+		radius = _radius;
+	}
+	double getRadius() {
+		return radius;
 	}
 };
 
 int main() 
 {
 	Circle c;
-	c.radius = 5;
+	c.setRadius(1);
 	cout << c.getArea();
 	system("pause");
 	return 0;
