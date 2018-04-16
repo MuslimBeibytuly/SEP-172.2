@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-
+#include <fstream>
 using namespace std;
 
 class Human
@@ -56,7 +56,7 @@ public:
 	{
 		return fullName;
 	}
-	void setFullName(string _fullName) 
+	void setFullName(string _fullName)
 	{
 		if (!_fullName.empty()) 
 		{
@@ -66,9 +66,47 @@ public:
 	//make this a lot of time
 };
 
+class Point 
+{
+private:
+	int x, y, z;
+public:
+	int getX() {
+		return x;
+	}
+	void setX(int _x) {
+		x = _x;
+	}
+	int getY() {
+		return y;
+	}
+	void setY(int _y) {
+		y = _y;
+	}
+	int getZ() {
+		return z;
+	}
+	void setZ(int _z) {
+		z = _z;
+	}
+	void readPointFromFile() 
+	{
+		ifstream in("point.txt");
+		in >> x >> y >> z;
+	}
+	void writePointToFile() {
+		ofstream out("point1.txt");
+		out << x << ' ' << y << ' ' << z;
+	}
+};
+
 int main()
 {
-	Student s;
+	Point p;
+	p.readPointFromFile();
+	cout << p.getX() << ' ' << p.getY() << ' ' << p.getZ() << endl;
+	p.setX(p.getX() + p.getY());
+	p.writePointToFile();
 	system("pause");
 	return 0;
 }
