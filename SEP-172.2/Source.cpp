@@ -1,6 +1,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "Student.h"
+
 using namespace std;
 
 class Human
@@ -32,38 +34,6 @@ public:
 	double getRadius() {
 		return radius;
 	}
-};
-
-class Student
-{
-private:
-	string fullName, dateOfBirth, phone, city, country, university, cityOfUniversity, countryOfUniversity;
-	int group;
-public:
-	void input()
-	{
-		cout << "fullName: ";
-		cin >> fullName;
-		//make this a lot of time
-	}
-	void show()
-	{
-		cout << "fullName: ";
-		cout << fullName << endl;
-		//make this a lot of time
-	}
-	string getFullName() 
-	{
-		return fullName;
-	}
-	void setFullName(string _fullName)
-	{
-		if (!_fullName.empty()) 
-		{
-			fullName = _fullName;
-		}
-	}
-	//make this a lot of time
 };
 
 class Point 
@@ -104,11 +74,7 @@ public:
 
 int main()
 {
-	Point p;
-	p.readPointFromFile();
-	cout << p.getX() << ' ' << p.getY() << ' ' << p.getZ() << endl;
-	p.setX(p.getX() + p.getY());
-	p.writePointToFile();
+	Student s;
 	system("pause");
 	return 0;
 }
