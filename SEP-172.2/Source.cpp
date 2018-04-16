@@ -52,6 +52,18 @@ public:
 		cout << fullName << endl;
 		//make this a lot of time
 	}
+	string getFullName() 
+	{
+		return fullName;
+	}
+	void setFullName(string _fullName) 
+	{
+		if (!_fullName.empty()) 
+		{
+			fullName = _fullName;
+		}
+	}
+	//make this a lot of time
 };
 
 int main()
