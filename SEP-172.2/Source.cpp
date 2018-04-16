@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Human 
+class Human
 {
 public:
 	//state
@@ -16,16 +16,16 @@ public:
 	}
 };
 
-class Circle 
+class Circle
 {
 private:
 	double radius;
 public:
-	double getArea() 
+	double getArea()
 	{
 		return 3.14 * radius * radius;
 	}
-	void setRadius(double _radius) 
+	void setRadius(double _radius)
 	{
 		radius = _radius;
 	}
@@ -34,11 +34,29 @@ public:
 	}
 };
 
-int main() 
+class Student
 {
-	Circle c;
-	c.setRadius(1);
-	cout << c.getArea();
+private:
+	string fullName, dateOfBirth, phone, city, country, university, cityOfUniversity, countryOfUniversity;
+	int group;
+public:
+	void input()
+	{
+		cout << "fullName: ";
+		cin >> fullName;
+		//make this a lot of time
+	}
+	void show()
+	{
+		cout << "fullName: ";
+		cout << fullName << endl;
+		//make this a lot of time
+	}
+};
+
+int main()
+{
+	Student s;
 	system("pause");
 	return 0;
 }
