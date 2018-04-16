@@ -93,8 +93,10 @@ public:
 	{
 		ifstream in("point.txt");
 		in >> x >> y >> z;
+		in.close();
 	}
-	void writePointToFile() {
+	void writePointToFile() 
+	{
 		ofstream out("point1.txt");
 		out << x << ' ' << y << ' ' << z;
 	}
