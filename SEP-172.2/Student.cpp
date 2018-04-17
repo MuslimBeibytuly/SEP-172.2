@@ -10,7 +10,6 @@ void Student::input()
 	std::cout << "fullName: ";
 	std::cin >> fullName;
 	//make this a lot of time
-
 }
 void Student::show()
 {

@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include "Student.h"
-
 using namespace std;
 
 class Human
@@ -59,22 +58,25 @@ public:
 	void setZ(int _z) {
 		z = _z;
 	}
-	void readPointFromFile() 
+	inline void readPointFromFile() 
 	{
 		ifstream in("point.txt");
 		in >> x >> y >> z;
 		in.close();
 	}
-	void writePointToFile() 
+	inline void writePointToFile() 
 	{
 		ofstream out("point1.txt");
 		out << x << ' ' << y << ' ' << z;
 	}
 };
+inline double square(double x) {
+	return x * x;
+}
 
 int main()
 {
-	Student s;
+	cout << square(5);
 	system("pause");
 	return 0;
 }
