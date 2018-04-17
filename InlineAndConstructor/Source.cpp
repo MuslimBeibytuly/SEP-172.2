@@ -9,24 +9,24 @@ public:
 	PositiveInteger()
 	{
 	}
-	PositiveInteger(int x) 
+	PositiveInteger(int x)
 	{
 		value = x;
 	}
-	PositiveInteger(char x) 
+	PositiveInteger(char x)
 	{
 		value = (int)(x - 48);
 	}
 	~PositiveInteger()
 	{
 	}
-	int getValue() 
+	int getValue()
 	{
 		return value;
 	}
-	void setValue(int _value) 
+	void setValue(int _value)
 	{
-		if (_value >= 0) 
+		if (_value >= 0)
 		{
 			value = _value;
 		}
@@ -40,12 +40,16 @@ private:
 
 class Point {
 public:
+	static int cnt;
 	int x, y, z;
-	Point() 
+	
+	Point()
 	{
+		++cnt;
 	}
 	Point(int _x) {
 		x = _x;
+		++cnt;
 	}
 	Point(int _x, int _y) : Point(_x)
 	{
@@ -55,23 +59,32 @@ public:
 	{
 		z = _z;
 	}
-	~Point() 
+	~Point()
 	{
-
 	}
 };
+int Point::cnt = 0;
 
-void sample() 
+class Singleton {
+public:
+	int x;
+	static Singleton & getInstance() {
+		static Singleton instance;
+		return instance;
+	}
+private:
+	Singleton() {}
+};
+
+void sample()
 {
-	Point a;
-	Point b(1);
-	Point c(1, 2);
-	Point d(1, 2, 3);
 }
 
-int main() 
+int main()
 {
-	sample();
+	//sample();
+	Point p1, p2(1), p3(4, 5);
+	cout << Point::cnt;
 	system("pause");
 	return 0;
 }
