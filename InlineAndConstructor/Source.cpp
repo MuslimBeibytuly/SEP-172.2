@@ -40,16 +40,12 @@ private:
 
 class Point {
 public:
-	static int cnt;
 	int x, y, z;
-	
 	Point()
 	{
-		++cnt;
 	}
 	Point(int _x) {
 		x = _x;
-		++cnt;
 	}
 	Point(int _x, int _y) : Point(_x)
 	{
@@ -62,29 +58,17 @@ public:
 	~Point()
 	{
 	}
-};
-int Point::cnt = 0;
-
-class Singleton {
-public:
-	int x;
-	static Singleton & getInstance() {
-		static Singleton instance;
-		return instance;
+	static void say() {
+		cout << "hello";
 	}
-private:
-	Singleton() {}
 };
-
-void sample()
-{
-}
-
 int main()
 {
-	//sample();
-	Point p1, p2(1), p3(4, 5);
-	cout << Point::cnt;
+	/*Singleton &a = Singleton::getInstance();
+	a.x = 5;
+	Singleton &b = Singleton::getInstance();
+	b.x = 10;
+	cout << a.x;*/
 	system("pause");
 	return 0;
 }
