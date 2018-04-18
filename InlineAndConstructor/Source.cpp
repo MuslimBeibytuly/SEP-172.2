@@ -41,34 +41,66 @@ private:
 class Point {
 public:
 	int x, y, z;
+	Point(const Point & point)
+	{
+		this->x = point.x;
+		this->y = point.y;
+		this->z = point.z;
+		cout << "Point is created" << endl;
+	}
+	int getX() {
+		return x;
+	}
+	void setX(int x) {
+		this->x = x;
+	}
 	Point()
 	{
+		cout << "Point is created" << endl;
 	}
-	Point(int _x) {
-		x = _x;
+	Point(int x) {
+		this->x = x;
+		cout << "Point is created" << endl;
 	}
-	Point(int _x, int _y) : Point(_x)
+	Point(int x, int y) : Point(x)
 	{
-		y = _y;
+		this->y = y;
 	}
-	Point(int _x, int _y, int _z) : Point(_x, _y)
+	Point(int x, int y, int z) : Point(x, y)
 	{
-		z = _z;
+		this->z = z;
 	}
 	~Point()
 	{
+		cout << "Point is destroyed" << endl;
 	}
 	static void say() {
 		cout << "hello";
 	}
 };
+
+class Singleton
+{
+private:
+	Singleton() {}
+public:
+	int x;
+	static Singleton & getInstance()
+	{
+		static Singleton instance;
+		return instance;
+	}
+	~Singleton() {}
+};
+
+void sample() {
+	Point p1;
+	Point p2(p1);
+}
+
 int main()
 {
-	/*Singleton &a = Singleton::getInstance();
-	a.x = 5;
-	Singleton &b = Singleton::getInstance();
-	b.x = 10;
-	cout << a.x;*/
+	sample();
 	system("pause");
 	return 0;
 }
