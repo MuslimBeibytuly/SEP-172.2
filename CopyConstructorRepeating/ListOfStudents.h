@@ -11,6 +11,5 @@ public:
 	void addStudent(int, std::string);
 	void addDuplicateStudent();
 	void showStudents();
-
+	std::vector<MyStudent> searchStudentsByName(std::string);
 };
-

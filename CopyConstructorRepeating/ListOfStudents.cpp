@@ -27,3 +27,14 @@ void ListOfStudents::showStudents()
 		std::cout << "grade: " << s.grade << ", name: " << s.name << std::endl;
 	}
 }
+
+std::vector<MyStudent> ListOfStudents::searchStudentsByName(std::string name)
+{
+	std::vector<MyStudent> result;
+	for (MyStudent s : students) {
+		if (s.name == name) {
+			result.push_back(s);
+		}
+	}
+	return result;
+}
