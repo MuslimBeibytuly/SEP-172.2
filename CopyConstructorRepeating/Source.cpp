@@ -1,28 +1,23 @@
 #include <iostream>
 #include "Matrix.h"
-
 using namespace std;
 
 int main() {
-	Matrix first(3, 3);
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			first.a[i][j] = i + j;
-			cout << first.a[i][j] << ' ';
-		}
-		cout << endl;
+	int n = 5;
+	int *a = new int[n];
+	for (int i = 0; i < n; ++i) {
+		a[i] = i;
+		cout << a[i] << endl;
 	}
-	Matrix second(first);
-
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << second.a[i][j] << ' ';
-		}
-		cout << endl;
+	int *temp = new int[n + 1];
+	for (int i = 0; i < n; ++i) {
+		temp[i] = a[i];
+	}
+	temp[n] = 5;
+	delete[] a;
+	a = new int[n + 1];
+	for (int i = 0; i < n + 1; ++i) {
+		a[i] = temp[i];
 	}
 
 	system("pause");
