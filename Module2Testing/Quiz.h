@@ -10,6 +10,7 @@ public:
 	std::vector<Question> questions;
 	User *user;
 	static Quiz & getInstance();
+	int score = 0;
 	~Quiz();
 	void initQuestions();
 	void writeResultToFile();

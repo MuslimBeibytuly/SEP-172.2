@@ -12,6 +12,21 @@ Question::Question(
 	this->right = right;
 }
 
+std::string Question::getText()
+{
+	return text;
+}
+
+std::vector<std::string> Question::getAnswers()
+{
+	return answers;
+}
+
+int Question::getRight()
+{
+	return right;
+}
+
 
 Question::~Question()
 {
