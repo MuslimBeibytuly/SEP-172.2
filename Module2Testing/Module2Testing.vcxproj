@@ -110,12 +110,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Presentation.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="Quiz.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Presentation.h" />
     <ClInclude Include="Question.h" />
     <ClInclude Include="Quiz.h" />
     <ClInclude Include="User.h" />
