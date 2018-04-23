@@ -23,13 +23,14 @@ void Quiz::initQuestions()
 
 	while (!in.eof()) 
 	{
-		in >> text;
+		std::getline(in, text);
 		std::string temp;
 		for (int i = 0; i < 4; ++i) 
 		{
 			in >> temp;
 			answers.push_back(temp);
 		}
+		in.ignore();
 		in >> right;
 		questions.push_back(Question(text, answers, right));
 		answers.clear();

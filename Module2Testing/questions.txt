@@ -1,12 +1,18 @@
-2+2?
+What is the capital of GB?
+London
+Paris
+Munich
+Marsel
 1
-2
+What is the capital of USA?
+Moscow
+Astana
+Washington
+Brussel
 3
-4
-4
-2+3?
-5
+What is the capital of France? 
+New-york
+Paris
+Almaty
+Beijing
 2
-3
-4
-1
