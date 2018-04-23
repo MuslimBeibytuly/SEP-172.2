@@ -4,9 +4,10 @@
 #include <iostream>
 class ListOfStudents
 {
-	std::vector<MyStudent> students;
 public:
+	std::vector<MyStudent> students;
 	ListOfStudents();
+	ListOfStudents(const ListOfStudents &);
 	~ListOfStudents();
 	void addStudent(int, std::string);
 	void addDuplicateStudent();

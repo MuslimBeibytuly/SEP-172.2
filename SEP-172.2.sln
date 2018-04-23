@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyConstructor", "CopyCons
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyConstructorRepeating", "CopyConstructorRepeating\CopyConstructorRepeating.vcxproj", "{B0D2ED45-13A3-41E0-AFC5-7B973B986A0B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Module2Testing", "Module2Testing\Module2Testing.vcxproj", "{F8697200-D406-44F5-A07E-B1E3B83E004F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{B0D2ED45-13A3-41E0-AFC5-7B973B986A0B}.Release|x64.Build.0 = Release|x64
 		{B0D2ED45-13A3-41E0-AFC5-7B973B986A0B}.Release|x86.ActiveCfg = Release|Win32
 		{B0D2ED45-13A3-41E0-AFC5-7B973B986A0B}.Release|x86.Build.0 = Release|Win32
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Debug|x64.ActiveCfg = Debug|x64
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Debug|x64.Build.0 = Debug|x64
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Debug|x86.Build.0 = Debug|Win32
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Release|x64.ActiveCfg = Release|x64
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Release|x64.Build.0 = Release|x64
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Release|x86.ActiveCfg = Release|Win32
+		{F8697200-D406-44F5-A07E-B1E3B83E004F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

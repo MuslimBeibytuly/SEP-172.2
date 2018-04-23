@@ -6,6 +6,11 @@ ListOfStudents::ListOfStudents()
 {
 }
 
+ListOfStudents::ListOfStudents(const ListOfStudents & other)
+{
+	this->students = other.students;
+}
+
 
 ListOfStudents::~ListOfStudents()
 {
