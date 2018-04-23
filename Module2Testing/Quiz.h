@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <fstream>
 #include "Question.h"
 #include "User.h"
 class Quiz

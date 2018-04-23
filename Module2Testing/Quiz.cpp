@@ -16,12 +16,28 @@ Quiz::~Quiz()
 
 void Quiz::initQuestions()
 {
-	questions.push_back(Question("2+2?", {"1", "2", "3", "4"}, 4));
-	questions.push_back(Question("2+3?", { "5", "2", "3", "4" }, 1));
-	questions.push_back(Question("2+4?", { "1", "6", "3", "4" }, 2));
-	questions.push_back(Question("2+5?", { "1", "2", "7", "4" }, 3));
+	std::ifstream in("questions.txt");
+	std::string text;
+	std::vector<std::string> answers;
+	int right;
+
+	while (!in.eof()) 
+	{
+		in >> text;
+		std::string temp;
+		for (int i = 0; i < 4; ++i) 
+		{
+			in >> temp;
+			answers.push_back(temp);
+		}
+		in >> right;
+		questions.push_back(Question(text, answers, right));
+		answers.clear();
+	}
 }
 
 void Quiz::writeResultToFile()
 {
+	std::ofstream out("result.txt");
+	out << user->getUsername() << ' ' << score << std::endl;
 }
