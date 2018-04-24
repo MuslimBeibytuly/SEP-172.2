@@ -23,6 +23,7 @@ void Quiz::initQuestions()
 
 	while (!in.eof()) 
 	{
+		in.ignore();
 		std::getline(in, text);
 		std::string temp;
 		for (int i = 0; i < 4; ++i) 

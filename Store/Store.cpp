@@ -13,7 +13,6 @@ Store::Store()
 	books.push_back(Book("Dostoevskiy", "Crime and Punishment", "N", 2018, 400));
 }
 
-
 Store::~Store()
 {
 }

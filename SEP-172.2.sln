@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Const", "Const\Const.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Store", "Store\Store.vcxproj", "{860BD8C1-F741-4F98-90DE-A32D7887D1BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reservoir", "Reservoir\Reservoir.vcxproj", "{45212410-36CA-4B7A-B8FA-FEF810ABB314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{860BD8C1-F741-4F98-90DE-A32D7887D1BE}.Release|x64.Build.0 = Release|x64
 		{860BD8C1-F741-4F98-90DE-A32D7887D1BE}.Release|x86.ActiveCfg = Release|Win32
 		{860BD8C1-F741-4F98-90DE-A32D7887D1BE}.Release|x86.Build.0 = Release|Win32
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Debug|x64.ActiveCfg = Debug|x64
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Debug|x64.Build.0 = Debug|x64
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Debug|x86.ActiveCfg = Debug|Win32
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Debug|x86.Build.0 = Debug|Win32
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Release|x64.ActiveCfg = Release|x64
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Release|x64.Build.0 = Release|x64
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Release|x86.ActiveCfg = Release|Win32
+		{45212410-36CA-4B7A-B8FA-FEF810ABB314}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
