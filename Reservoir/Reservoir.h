@@ -14,7 +14,7 @@ public:
 	double getArea() const;
 	bool typeEquals(const Reservoir &) const;
 	bool hasAreaMoreThan(Reservoir &);
-	explicit Reservoir(const Reservoir &);
+	Reservoir(const Reservoir &);
 	explicit Reservoir(std::string);
 	explicit Reservoir();
 	~Reservoir();
