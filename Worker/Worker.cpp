@@ -1,8 +1,4 @@
 #include "Worker.h"
-Worker::Worker(int salary)
-{
-	this->salary = salary;
-}
 Worker::Worker()
 {
 	
@@ -10,4 +6,9 @@ Worker::Worker()
 
 Worker::~Worker()
 {
+}
+
+bool operator==(const Worker & w1, const Worker & w2)
+{
+	return w1.experience == w2.experience;
 }
