@@ -1,16 +1,14 @@
 #pragma once
-#define _CRT_SECURE_NO_WARNINGS
-#include <string.h>
+#include <string>
 class MyString
 {
 public:
-	char * symbols;
-	int size;
-	MyString(const char *, int);
+	std::string symbols;
 	MyString();
 	~MyString();
 	char operator [](int i);
 	char operator ()(int i);
-	MyString operator +(MyString & other);
+	MyString operator *(MyString &);
+	//MyString operator +(MyString & other);
 };
 

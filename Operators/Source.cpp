@@ -56,19 +56,24 @@ public:
 };
 
 void sample() {
-	MyString s1("asd", 3);
+	/*MyString s1("asd", 3);
 	MyString s2("zxc", 3);
 	MyString s3 = s1 + s2;
 	for (int i = 0; i < s3.size; ++i) {
 		std::cout << s3.symbols[i];
 	}
-	std::cout << std::endl;
+	std::cout << std::endl;*/
 }
 
 void sampleForDates() 
 {
-	Date d1(25, 6, 2018), d2(12, 8, 2012);
-	std::cout << d1 - d2;
+	/*Date d1(25, 6, 2018), d2(12, 8, 2012);
+	std::cout << d1 - d2;*/
+	MyString s1, s2;
+	s1.symbols = "12345";
+	s2.symbols = "23";
+	MyString s3 = s1 * s2;
+	std::cout << s3.symbols << std::endl;
 }
 
 
