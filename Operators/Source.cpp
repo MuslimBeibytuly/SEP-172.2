@@ -10,9 +10,26 @@ public:
 	{
 		std::cout << "Integer()" << std::endl;
 	}
-	void operator =(int value) {
+	void operator =(int value) 
+	{
 		std::cout << "=" << std::endl;
 		this->value = value;
+	}
+	void operator +=(int value) 
+	{
+		std::cout << "+=" << std::endl;
+		this->value += value;
+	}
+	Integer & operator ++() 
+	{
+		++this->value;
+		return *this;
+	}
+	Integer & operator ++(int) 
+	{
+		Integer prev = *this;
+		++this->value;
+		return prev;
 	}
 	bool operator <(const Integer & a) const 
 	{
@@ -26,7 +43,8 @@ public:
 	{
 		return this->value == a.value;
 	}
-	~Integer() {
+	~Integer() 
+	{
 		std::cout << "~Integer()" << std::endl;
 	}
 	/*void operator +(A & a) {
@@ -34,10 +52,9 @@ public:
 	}*/
 };
 void sample() {
-	Integer a, b = 5;
-	a = 1;
-	bool res = a <= b;
-	std::cout << res << std::endl;
+	Integer a = 5;
+	std::cout << a++.value << std::endl;
+	std::cout << a.value << std::endl;
 }
 int main() {
 	sample();
