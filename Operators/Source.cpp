@@ -1,4 +1,7 @@
 #include <iostream>
+#include "MyString.h"
+
+#include <iostream>
 class Integer {
 public:
 	int value;
@@ -10,12 +13,12 @@ public:
 	{
 		std::cout << "Integer()" << std::endl;
 	}
-	void operator =(int value) 
+	void operator =(const Integer & other) 
 	{
 		std::cout << "=" << std::endl;
-		this->value = value;
+		this->value = other.value;
 	}
-	void operator +=(int value) 
+	void operator +=(const int & value) 
 	{
 		std::cout << "+=" << std::endl;
 		this->value += value;
@@ -51,10 +54,15 @@ public:
 
 	}*/
 };
+
 void sample() {
-	Integer a = 5;
-	std::cout << a++.value << std::endl;
-	std::cout << a.value << std::endl;
+	MyString s1("asd", 3);
+	MyString s2("zxc", 3);
+	s1 + s2;
+	for (int i = 0; i < s1.size; ++i) {
+		std::cout << s1.symbols[i];
+	}
+	std::cout << std::endl;
 }
 int main() {
 	sample();
