@@ -1,7 +1,7 @@
 #include <iostream>
 #include "MyString.h"
-
-#include <iostream>
+#include "Date.h"
+#include <string>
 class Integer {
 public:
 	int value;
@@ -58,14 +58,23 @@ public:
 void sample() {
 	MyString s1("asd", 3);
 	MyString s2("zxc", 3);
-	s1 + s2;
-	for (int i = 0; i < s1.size; ++i) {
-		std::cout << s1.symbols[i];
+	MyString s3 = s1 + s2;
+	for (int i = 0; i < s3.size; ++i) {
+		std::cout << s3.symbols[i];
 	}
 	std::cout << std::endl;
 }
-int main() {
-	sample();
+
+void sampleForDates() 
+{
+	Date d1(25, 6, 2018), d2(12, 8, 2012);
+	std::cout << d1 - d2;
+}
+
+
+int main() 
+{
+	sampleForDates();
 	system("pause");
 	return 0;
 }

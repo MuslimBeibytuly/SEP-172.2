@@ -20,8 +20,35 @@ MyString::~MyString()
 {
 }
 
-MyString MyString::operator +(MyString other)
+char MyString::operator[](int i)
 {
-	this->size += other.size;
-	strcat(this->symbols, other.symbols);
+	if (i < size) 
+	{
+		return symbols[i];
+	}
+}
+
+char MyString::operator()(int i)
+{
+	if (i < size)
+	{
+		return symbols[i];
+	}
+}
+
+MyString MyString::operator +(MyString & other)
+{
+	MyString res;
+	res.size = this->size + other.size;
+	res.symbols = new char[res.size];
+	int i = 0;
+	for (; i < this->size; ++i) 
+	{
+		res.symbols[i] = this->symbols[i];
+	}
+	for (i = this->size; i < res.size; ++i)
+	{
+		res.symbols[i] = other.symbols[i - this->size];
+	}
+	return res;
 }

@@ -9,6 +9,8 @@ public:
 	MyString(const char *, int);
 	MyString();
 	~MyString();
-	MyString operator +(MyString other);
+	char operator [](int i);
+	char operator ()(int i);
+	MyString operator +(MyString & other);
 };
 
