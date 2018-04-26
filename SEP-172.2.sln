@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Points", "Points\Points.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle", "Circle\Circle.vcxproj", "{83034F9E-FDC6-43CA-8B8A-5C46E4645260}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dino", "Dino\Dino.vcxproj", "{53649F5D-785E-46E4-B580-740265D658A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{83034F9E-FDC6-43CA-8B8A-5C46E4645260}.Release|x64.Build.0 = Release|x64
 		{83034F9E-FDC6-43CA-8B8A-5C46E4645260}.Release|x86.ActiveCfg = Release|Win32
 		{83034F9E-FDC6-43CA-8B8A-5C46E4645260}.Release|x86.Build.0 = Release|Win32
+		{53649F5D-785E-46E4-B580-740265D658A2}.Debug|x64.ActiveCfg = Debug|x64
+		{53649F5D-785E-46E4-B580-740265D658A2}.Debug|x64.Build.0 = Debug|x64
+		{53649F5D-785E-46E4-B580-740265D658A2}.Debug|x86.ActiveCfg = Debug|Win32
+		{53649F5D-785E-46E4-B580-740265D658A2}.Debug|x86.Build.0 = Debug|Win32
+		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x64.ActiveCfg = Release|x64
+		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x64.Build.0 = Release|x64
+		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x86.ActiveCfg = Release|Win32
+		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,12 @@
 #include "Airplane.h"
 
 
+Airplane::Airplane(Airplane && a)
+{
+	this->passengers = a.passengers;
+	this->capacity = a.capacity;
+}
+
 Airplane::Airplane(Volume v)
 {
 	capacity = v;

@@ -7,6 +7,7 @@ class Airplane
 public:
 	Volume capacity;
 	int passengers;
+	Airplane(Airplane &&);
 	Airplane(Volume);
 	~Airplane();
 	bool operator ==(const Airplane &) const;
