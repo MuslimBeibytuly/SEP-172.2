@@ -11,7 +11,7 @@ MyString::~MyString()
 
 char MyString::operator[](int i)
 {
-	if (i < symbols.size()) 
+	if (i < symbols.size())
 	{
 		return symbols[i];
 	}
@@ -28,11 +28,12 @@ char MyString::operator()(int i)
 MyString MyString::operator *(MyString & m)
 {
 	MyString res;
-	for (int i = 0; i < symbols.size();++i) 
+	for (int i = 0; i < symbols.size(); ++i)
 	{
-		for (int j = 0; j < m.symbols.size(); ++j) 
+		for (int j = 0; j < m.symbols.size(); ++j)
 		{
-			if (symbols[i] == m[j]) {
+			if (symbols[i] == m[j]) 
+			{
 				res.symbols += m[j];
 			}
 		}
