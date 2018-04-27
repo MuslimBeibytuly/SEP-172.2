@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circle", "Circle\Circle.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dino", "Dino\Dino.vcxproj", "{53649F5D-785E-46E4-B580-740265D658A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGame", "SnakeGame\SnakeGame.vcxproj", "{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x64.Build.0 = Release|x64
 		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x86.ActiveCfg = Release|Win32
 		{53649F5D-785E-46E4-B580-740265D658A2}.Release|x86.Build.0 = Release|Win32
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Debug|x64.ActiveCfg = Debug|x64
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Debug|x64.Build.0 = Debug|x64
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Debug|x86.ActiveCfg = Debug|Win32
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Debug|x86.Build.0 = Debug|Win32
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Release|x64.ActiveCfg = Release|x64
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Release|x64.Build.0 = Release|x64
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Release|x86.ActiveCfg = Release|Win32
+		{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
