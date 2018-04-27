@@ -24,8 +24,16 @@ void Dino::draw()
 
 void Dino::jump()
 {
+	bool gotCeiling = false;
 	for (Pixel & pixel : body) {
-		pixel.y--;
+		if (pixel.y < 8) {
+			gotCeiling = true;
+		}
+	}
+	if (!gotCeiling) {
+		for (Pixel & pixel : body) {
+			pixel.y--;
+		}
 	}
 }
 
