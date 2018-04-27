@@ -9,6 +9,7 @@ void Cactus::draw()
 	}
 }
 
+
 void Cactus::move()
 {
 	for (Pixel & pixel : body) {

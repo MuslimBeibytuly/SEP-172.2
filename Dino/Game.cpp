@@ -1,6 +1,7 @@
 #include "Game.h"
 Game::Game()
 {
+	score = 0;
 	width = 50, height = 50;
 }
 
@@ -16,6 +17,7 @@ void Game::play()
 	while (isActive)
 	{
 		system("cls");
+		score += checkIfDinoAvoids();
 		cactus.move();
 		if (_kbhit())
 		{
@@ -52,7 +54,7 @@ void Game::play()
 	}
 	system("cls");
 	Pixel::gotoXY(5, 5);
-	std::cout << "You're done";
+	std::cout << "You're done with: " << score << std::endl;
 }
 
 bool Game::checkIfDinoCrushes()
@@ -73,6 +75,21 @@ bool Game::checkIfDinoCrushes()
 bool Game::checkIfDinoSettles()
 {
 	return dino.body[3].y < (ground.body[0].y - 1);
+}
+
+bool Game::checkIfDinoAvoids()
+{
+	for (Pixel & p1 : dino.body)
+	{
+		for (Pixel & p2 : cactus.body)
+		{
+			if (p1.x == p2.x && p1.y != p2.y)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
 }
 
 

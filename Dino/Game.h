@@ -9,11 +9,13 @@ class Game
 	Cactus cactus;
 	bool isActive;
 	short width, height;
+	int score;
 	Game();
 public:
 	static Game & getInstance();
 	void play();
 	bool checkIfDinoCrushes();
 	bool checkIfDinoSettles();
+	bool checkIfDinoAvoids();
 	~Game();
 };
