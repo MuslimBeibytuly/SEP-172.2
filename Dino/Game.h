@@ -8,9 +8,12 @@ class Game
 	Ground ground;
 	Cactus cactus;
 	bool isActive;
-public:
+	short width, height;
 	Game();
+public:
+	static Game & getInstance();
 	void play();
+	bool checkIfDinoCrushes();
+	bool checkIfDinoSettles();
 	~Game();
 };
-

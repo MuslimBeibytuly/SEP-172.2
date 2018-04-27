@@ -4,8 +4,8 @@
 class Ground
 {
 	char sign;
-	std::vector<Pixel> body;
 public:
+	std::vector<Pixel> body;
 	Ground();
 	~Ground();
 	void draw();

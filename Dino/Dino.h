@@ -4,8 +4,8 @@
 class Dino
 {
 	char sign;
-	std::vector<Pixel> body;
 public:
+	std::vector<Pixel> body;
 	bool isJumping;
 	Dino();
 	~Dino();

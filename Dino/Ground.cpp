@@ -5,8 +5,8 @@
 Ground::Ground()
 {
 	sign = '=';
-	for (int i = 1; i < 20; ++i) {
-		body.push_back(Pixel(i, 5));
+	for (int i = 1; i < 50; ++i) {
+		body.push_back(Pixel(i, 15));
 	}
 }
 

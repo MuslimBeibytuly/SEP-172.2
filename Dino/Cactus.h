@@ -4,8 +4,8 @@
 class Cactus
 {
 	char sign;
-	std::vector<Pixel> body;
 public:
+	std::vector<Pixel> body;
 	void draw();
 	void move();
 	Cactus();

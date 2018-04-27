@@ -10,5 +10,7 @@ public:
 	void draw(const char & sign);
 	Pixel();
 	~Pixel();
+	bool operator ==(const Pixel &) const;
+	static void gotoXY(short x, short y);
 };
 

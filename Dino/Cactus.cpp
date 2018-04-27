@@ -24,8 +24,9 @@ void Cactus::move()
 
 Cactus::Cactus()
 {
-	body.push_back(Pixel(20, 3));
-	body.push_back(Pixel(20, 4));
+	sign = 'f';
+	body.push_back(Pixel(48, 13));
+	body.push_back(Pixel(48, 14));
 }
 
 
