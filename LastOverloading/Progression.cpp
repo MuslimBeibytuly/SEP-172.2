@@ -30,3 +30,8 @@ Progression::Progression()
 Progression::~Progression()
 {
 }
+
+bool compare(Progression & a, Progression & b)
+{
+	return false;
+}

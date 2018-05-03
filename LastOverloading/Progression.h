@@ -7,6 +7,7 @@ public:
 	void setD(int);
 	int operator ()(int);
 	int operator [](int);
+	friend bool compare(Progression &, Progression &);
 	Progression();
 	~Progression();
 };
