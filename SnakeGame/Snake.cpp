@@ -1,14 +1,9 @@
 #include "Snake.h"
 
-
-
 Snake::Snake()
 {
 	sign = '*';
 	body.push_back(Pixel(5, 5));
-	body.push_back(Pixel(5, 6));
-	body.push_back(Pixel(5, 7));
-	body.push_back(Pixel(5, 8));
 	direction = Default;
 }
 
@@ -27,6 +22,10 @@ void Snake::move()
 		break;
 	case Right:
 		x = 1;
+		break;
+	case Default:
+		return;
+	default:
 		break;
 	}
 	for (int i = body.size() - 1; i > 0; i--) {
@@ -47,6 +46,18 @@ void Snake::draw()
 	for (Pixel pixel : body) {
 		pixel.draw(sign);
 	}
+}
+
+bool Snake::willEatItself()
+{
+	for (int i = 1; i < body.size(); ++i) 
+	{
+		if (body[0] == body[i]) 
+		{
+			return true;
+		}
+	}
+	return false;
 }
 
 

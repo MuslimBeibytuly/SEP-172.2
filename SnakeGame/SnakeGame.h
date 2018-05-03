@@ -1,12 +1,13 @@
 #pragma once
 #include "Snake.h"
 #include "Food.h"
+#include "Wall.h"
 class SnakeGame
 {
 	enum State { Started, Playing, Pause, Quit };
-	
-	Food food;
 	State state;
+	Food food;
+	Wall wall;
 	SnakeGame();
 public:
 	Snake snake;
@@ -17,6 +18,7 @@ public:
 	}
 	void play();
 	bool snakeEatsFood();
+	bool snakeCrushesIntoWall();
 	~SnakeGame();
 };
 

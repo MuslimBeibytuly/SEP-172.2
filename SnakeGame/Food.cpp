@@ -3,16 +3,16 @@
 
 Food::Food()
 {
-	sign = '#';
+	sign = '@';
 	body = { 3, 3 };
 }
 
 void Food::regenerate()
 {
-	body = { rand() % 15 , rand() % 15 };
-	for (Pixel & pixel : SnakeGame::getInstance().snake.body) 
+	body = { rand() % 18 + 2, rand() % 18 + 2 };
+	for (Pixel & pixel : SnakeGame::getInstance().snake.body)
 	{
-		if (body == pixel) 
+		if (body == pixel)
 		{
 			regenerate();
 		}

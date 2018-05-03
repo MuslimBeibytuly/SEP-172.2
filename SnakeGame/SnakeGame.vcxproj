@@ -115,12 +115,14 @@
     <ClCompile Include="Snake.cpp" />
     <ClCompile Include="SnakeGame.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Food.h" />
     <ClInclude Include="Pixel.h" />
     <ClInclude Include="Snake.h" />
     <ClInclude Include="SnakeGame.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dino\Dino.vcxproj">

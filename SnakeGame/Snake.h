@@ -12,6 +12,7 @@ public:
 	void move();
 	void eat(Pixel pixel);
 	void draw();
+	bool willEatItself();
 	~Snake();
 };
 
