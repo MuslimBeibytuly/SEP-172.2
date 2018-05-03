@@ -1,12 +1,9 @@
 #include "SnakeGame.h"
 
-
-
 SnakeGame::SnakeGame()
 {
 	state = Started;
 }
-
 
 void SnakeGame::play()
 {
