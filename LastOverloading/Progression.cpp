@@ -12,6 +12,16 @@ void Progression::setD(int d)
 	this->d = d;
 }
 
+int Progression::getA1()
+{
+	return a1;
+}
+
+int Progression::getD()
+{
+	return d;
+}
+
 int Progression::operator()(int n)
 {
 	return ((a1 + (a1 + (n - 1) * d)) * n) / 2;
