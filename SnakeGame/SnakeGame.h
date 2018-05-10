@@ -2,6 +2,7 @@
 #include "Snake.h"
 #include "Food.h"
 #include "Wall.h"
+
 class SnakeGame
 {
 	enum State { Started, Playing, Pause, Quit };

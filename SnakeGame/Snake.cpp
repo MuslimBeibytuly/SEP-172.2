@@ -60,7 +60,6 @@ bool Snake::willEatItself()
 	return false;
 }
 
-
 Snake::~Snake()
 {
 }

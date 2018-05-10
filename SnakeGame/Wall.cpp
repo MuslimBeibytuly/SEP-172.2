@@ -1,7 +1,5 @@
 #include "Wall.h"
 
-
-
 Wall::Wall()
 {
 	sign = '#';
@@ -21,7 +19,6 @@ void Wall::draw()
 		pixel.draw(sign);
 	}
 }
-
 
 Wall::~Wall()
 {

@@ -16,7 +16,6 @@ Pixel::Pixel()
 {
 }
 
-
 Pixel::~Pixel()
 {
 }
