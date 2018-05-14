@@ -9,6 +9,10 @@ MyString::~MyString()
 {
 }
 
+MyString::MyString(std::string x)
+{
+}
+
 char MyString::operator[](int i)
 {
 	if (i < symbols.size())

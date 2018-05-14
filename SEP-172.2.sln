@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polymorphism", "Polymorphis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateClass", "TemplateClass\TemplateClass.vcxproj", "{EE338F5C-D9ED-4F82-B6BD-72B1D861647E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OwnString", "OwnString\OwnString.vcxproj", "{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +257,16 @@ Global
 		{EE338F5C-D9ED-4F82-B6BD-72B1D861647E}.Release|x64.Build.0 = Release|x64
 		{EE338F5C-D9ED-4F82-B6BD-72B1D861647E}.Release|x86.ActiveCfg = Release|Win32
 		{EE338F5C-D9ED-4F82-B6BD-72B1D861647E}.Release|x86.Build.0 = Release|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Debug|x64.ActiveCfg = Debug|x64
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Debug|x64.Build.0 = Debug|x64
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Debug|x86.Build.0 = Debug|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Release|x64.ActiveCfg = Release|x64
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Release|x64.Build.0 = Release|x64
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Release|x86.ActiveCfg = Release|Win32
+		{D93AAEBB-E3F2-4BC0-B2A3-486DD1C4FF4A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

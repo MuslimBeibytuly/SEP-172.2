@@ -46,9 +46,43 @@ public:
 	{
 		delete[] data;
 	}
+	T & operator [](const int & position)
+	{
+		return data[position];
+	}
+	T * begin() {
+		return & data[0];
+	}
+	T * end() {
+		return & data[size - 1];
+	}
+	void operator +=(DynamicArray & anotherDynamicArray)
+	{
+		/*data = (T*)realloc(
+			data, 
+			(size + anotherDynamicArray.count())* sizeof(T)
+		);
+
+		for (
+			int j = 0, int i = size; 
+			i < size + anotherDynamicArray.count();
+			++i, ++j
+			)
+		{
+			data[i] = anotherDynamicArray[j];
+			size = size + anotherDynamicArray.count();
+		}*/
+		for (int i = 0; i < anotherDynamicArray.count(); ++i) 
+		{
+			push_back(anotherDynamicArray[i]);
+		}
+	}
+	void operator +=(const T & element)
+	{
+		push_back(element);
+	}
 	~DynamicArray()
 	{
 		clear();
 	}
 };
-

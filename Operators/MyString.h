@@ -6,6 +6,7 @@ public:
 	std::string symbols;
 	MyString();
 	~MyString();
+	MyString(std::string);
 	char operator [](int i);
 	char operator ()(int i);
 	MyString operator *(MyString &);

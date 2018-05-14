@@ -43,9 +43,15 @@ void sample()
 
 void main()
 {
-	DynamicArray<int> a(std::initializer_list<int>{1, 2, 3, 4});
-	a.push_back(5);
-	a.push_back(6);
-	std::cout << a.count();
+	auto a = DynamicArray<int>(std::initializer_list<int>{1, 2, 3, 4});
+	DynamicArray<int> b(std::initializer_list<int>{7, 8, 9, 10});
+	a += b;
+	a += 5;
+	a += 6;
+	std::cout << a.count() << std::endl;
+	for (int x : a) 
+	{
+		std::cout << x << std::endl;
+	}
 	system("pause");
 }

@@ -1,7 +1,6 @@
 #include <iostream>
 #include "MyString.h"
 #include "Date.h"
-#include <string>
 class Integer {
 public:
 	int value;
@@ -76,10 +75,9 @@ void sampleForDates()
 	std::cout << s3.symbols << std::endl;
 }
 
-
-int main() 
+int main()
 {
-	sampleForDates();
+	MyString a("as");
 	system("pause");
 	return 0;
 }
