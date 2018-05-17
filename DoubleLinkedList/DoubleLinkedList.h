@@ -47,11 +47,13 @@ public:
 	{
 		head = head->next;
 		delete head->prev;
+		tail->prev = nullptr;
 	}
 	void deleteFromTail()
 	{
 		tail = tail->prev;
 		delete tail->next;
+		tail->next = nullptr;
 	}
 	friend std::ostream & operator <<(
 		std::ostream & os, 

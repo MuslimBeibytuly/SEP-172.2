@@ -6,6 +6,7 @@ void main()
 	l.addToTail(1);
 	l.addToTail(2);
 	l.addToHead(3);
+	l.deleteFromTail();
 	std::cout << l;
 	system("pause");
 }
