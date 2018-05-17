@@ -2,8 +2,8 @@
 template <typename Type>
 class DoubleLinkedListElement
 {
-	Type value;
 public:
+	Type value;
 	DoubleLinkedListElement<Type> *next, *prev;
 	DoubleLinkedListElement(const Type & value) 
 	{
