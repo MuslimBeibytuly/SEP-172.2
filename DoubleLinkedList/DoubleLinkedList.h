@@ -1,33 +1,48 @@
 #pragma once
 #include <ostream>
-#include "DoubleLinkedListElement.h"
 template <typename Type>
 class DoubleLinkedList
 {
+	template <typename Type>
+	class DoubleLinkedListElement
+	{
+	public:
+		Type value;
+		DoubleLinkedListElement<Type> *next, *prev;
+		DoubleLinkedListElement(const Type & value)
+		{
+			this->value = value;
+			next = prev = nullptr;
+		}
+		~DoubleLinkedListElement()
+		{
+
+		}
+	};
 	DoubleLinkedListElement<Type> *head, *tail;
 public:
 	DoubleLinkedList()
 	{
 		head = tail = nullptr;
 	}
-	void addToTail(const Type & value) 
+	void addToTail(const Type & value)
 	{
-		if (tail == nullptr) 
+		if (tail == nullptr)
 		{
 			head = tail = new DoubleLinkedListElement<Type>(value);
 			tail->prev = head;
 			head->next = tail;
 		}
-		else 
+		else
 		{
-			DoubleLinkedListElement<Type> * temp = 
+			DoubleLinkedListElement<Type> * temp =
 				tail;
 			tail->next = new DoubleLinkedListElement<Type>(value);
 			tail = tail->next;
 			tail->prev = temp;
 		}
 	}
-	void addToHead(const Type & value) 
+	void addToHead(const Type & value)
 	{
 		if (head == nullptr)
 		{
@@ -43,7 +58,7 @@ public:
 			head->next = temp;
 		}
 	}
-	void deleteFromHead() 
+	void deleteFromHead()
 	{
 		head = head->next;
 		delete head->prev;
@@ -56,13 +71,13 @@ public:
 		tail->next = nullptr;
 	}
 	friend std::ostream & operator <<(
-		std::ostream & os, 
+		std::ostream & os,
 		const DoubleLinkedList<Type> & l
 		)
 	{
-		for(
-			DoubleLinkedListElement<Type> * temp = l.head; 
-			temp != nullptr; 
+		for (
+			DoubleLinkedListElement<Type> * temp = l.head;
+			temp != nullptr;
 			temp = temp->next
 			)
 		{
@@ -70,7 +85,7 @@ public:
 		}
 		return os;
 	}
-	~DoubleLinkedList() 
+	~DoubleLinkedList()
 	{
 	}
 };

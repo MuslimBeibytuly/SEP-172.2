@@ -41,13 +41,6 @@ void Snake::eat(Pixel pixel)
 	body.push_back(pixel);
 }
 
-void Snake::draw()
-{
-	for (Pixel pixel : body) {
-		pixel.draw(sign);
-	}
-}
-
 bool Snake::willEatItself()
 {
 	for (int i = 1; i < body.size(); ++i) 

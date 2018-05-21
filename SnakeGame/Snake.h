@@ -1,17 +1,13 @@
 #pragma once
-#include "Pixel.h"
-#include <vector>
-class Snake
+#include "IDrawable.h"
+class Snake : public IDrawable
 {
-	char sign;
 public:
-	std::vector<Pixel> body;
 	enum Direction { Up, Down, Left, Right, Default };
 	Direction direction;
 	Snake();
 	void move();
 	void eat(Pixel pixel);
-	void draw();
 	bool willEatItself();
 	~Snake();
 };

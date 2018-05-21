@@ -39,7 +39,7 @@ void SnakeGame::play()
 		}
 		if (snakeEatsFood())
 		{
-			snake.eat(food.body);
+			snake.eat(food.body[0]);
 			food.regenerate();
 		}
 		snake.move();
@@ -59,7 +59,7 @@ void SnakeGame::play()
 
 bool SnakeGame::snakeEatsFood()
 {
-	return (snake.body[0] == food.body);
+	return (snake.body[0] == food.body[0]);
 }
 
 bool SnakeGame::snakeCrushesIntoWall()

@@ -1,13 +1,9 @@
 #pragma once
-#include <vector>
-#include "Pixel.h"
-class Wall
+#include "IDrawable.h"
+class Wall : public IDrawable
 {
-	char sign;
 public:
-	std::vector<Pixel> body;
 	Wall();
-	void draw();
 	~Wall();
 };
 

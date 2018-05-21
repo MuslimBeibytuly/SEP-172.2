@@ -12,14 +12,6 @@ Wall::Wall()
 	}
 }
 
-void Wall::draw()
-{
-	for (Pixel & pixel : body) 
-	{
-		pixel.draw(sign);
-	}
-}
-
 Wall::~Wall()
 {
 }

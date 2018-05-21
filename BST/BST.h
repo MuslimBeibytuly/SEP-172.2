@@ -11,7 +11,7 @@ class BST
 			if (root->left == nullptr)
 			{
 				root->left = new BSTNode<Type>(value);
-			}
+			}+
 			else
 			{
 				addBSTNodeIfRootExists(root->left, value);
@@ -47,4 +47,3 @@ public:
 	}
 	~BST(){}
 };
-

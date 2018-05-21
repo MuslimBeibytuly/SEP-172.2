@@ -15,45 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SnakeGame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Snake.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Pixel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Food.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Wall.cpp">
+    <ClCompile Include="Animal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IDrawable.cpp">
+    <ClCompile Include="Dog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Horse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HorseMan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SnakeGame.h">
+    <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Snake.h">
+    <ClInclude Include="Dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pixel.h">
+    <ClInclude Include="Person.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Food.h">
+    <ClInclude Include="Horse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Wall.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IDrawable.h">
+    <ClInclude Include="HorseMan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
