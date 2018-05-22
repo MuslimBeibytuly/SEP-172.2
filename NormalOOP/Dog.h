@@ -9,4 +9,3 @@ public:
 	Dog();
 	~Dog();
 };
-
