@@ -7,4 +7,3 @@ public:
 	Character();
 	virtual ~Character();
 };
-
