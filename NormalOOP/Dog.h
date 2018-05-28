@@ -3,7 +3,7 @@
 class Dog : public Animal
 {
 public:
-	void move() {
+	void move() override {
 		std::cout << "No, I'm overloaded" << name << std::endl;
 	}
 	Dog();

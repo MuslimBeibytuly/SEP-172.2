@@ -8,9 +8,10 @@ SnakeGame::SnakeGame()
 void SnakeGame::play()
 {
 	state = Playing;
+	Drawer::initialDraw({ wall, food });
 	while (state == Playing)
 	{
-		system("cls");
+		snake.clear();
 		if (_kbhit())
 		{
 			char action = _getch();
@@ -41,11 +42,9 @@ void SnakeGame::play()
 		{
 			snake.eat(food.body[0]);
 			food.regenerate();
+			food.draw();
 		}
-		snake.move();
-		snake.draw();
-		food.draw();
-		wall.draw();
+		Drawer::moveAndRedraw(snake);
 		Sleep(100);
 	}
 	system("cls");

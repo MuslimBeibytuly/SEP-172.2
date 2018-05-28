@@ -9,4 +9,3 @@ public:
 	static Client * client_signed_in();
 	static Client * client_signed_out();
 };
-

@@ -53,6 +53,14 @@ bool Snake::willEatItself()
 	return false;
 }
 
+void Snake::clear()
+{
+	for (Pixel pixel : body)
+	{
+		pixel.draw(' ');
+	}
+}
+
 Snake::~Snake()
 {
 }

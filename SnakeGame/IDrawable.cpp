@@ -1,6 +1,6 @@
 #include "IDrawable.h"
 
-void IDrawable::draw()
+void IDrawable::draw() const
 {
 	for (Pixel pixel : body)
 	{

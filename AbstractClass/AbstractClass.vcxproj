@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9564C6E1-FBE5-42F9-9486-BC3FD6C9FC46}</ProjectGuid>
-    <RootNamespace>SnakeGame</RootNamespace>
+    <ProjectGuid>{5707E3CD-F14D-4A92-B037-101CAB5B68D2}</ProjectGuid>
+    <RootNamespace>AbstractClass</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,28 +110,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Drawer.cpp" />
-    <ClCompile Include="Food.cpp" />
-    <ClCompile Include="IDrawable.cpp" />
-    <ClCompile Include="Pixel.cpp" />
-    <ClCompile Include="Snake.cpp" />
-    <ClCompile Include="SnakeGame.cpp" />
+    <ClCompile Include="Identity.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawer.h" />
-    <ClInclude Include="Food.h" />
-    <ClInclude Include="IDrawable.h" />
-    <ClInclude Include="Pixel.h" />
-    <ClInclude Include="Snake.h" />
-    <ClInclude Include="SnakeGame.h" />
-    <ClInclude Include="Wall.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Dino\Dino.vcxproj">
-      <Project>{53649f5d-785e-46e4-b580-740265d658a2}</Project>
-    </ProjectReference>
+    <ClInclude Include="Identity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

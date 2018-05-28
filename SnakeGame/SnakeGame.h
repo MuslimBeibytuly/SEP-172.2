@@ -2,6 +2,7 @@
 #include "Snake.h"
 #include "Food.h"
 #include "Wall.h"
+#include "Drawer.h"
 
 class SnakeGame
 {

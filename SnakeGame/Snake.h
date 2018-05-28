@@ -9,5 +9,6 @@ public:
 	void move();
 	void eat(Pixel pixel);
 	bool willEatItself();
+	void clear();
 	~Snake();
 };

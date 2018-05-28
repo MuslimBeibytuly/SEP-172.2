@@ -6,7 +6,7 @@ class IDrawable
 public:	
 	std::vector<Pixel> body;
 	char sign;
-	void draw();
+	void draw() const;
 	IDrawable();
 	~IDrawable();
 };
