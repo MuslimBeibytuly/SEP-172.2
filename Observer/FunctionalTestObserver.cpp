@@ -4,7 +4,8 @@
 
 void FunctionalTestObserver::global_testing()
 {
-	for (auto current_test : tests) {
+	for (auto current_test : tests) 
+	{
 		current_test->setUp();
 		current_test->test();
 		current_test->clean();
