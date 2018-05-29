@@ -2,6 +2,11 @@
 
 
 
+size_t ConcreteObservable::count() const
+{
+	return observers.size();
+}
+
 void ConcreteObservable::addObserver(Observer * observer)
 {
 	observer->id = observers.size();

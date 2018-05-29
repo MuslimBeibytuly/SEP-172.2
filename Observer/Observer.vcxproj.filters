@@ -36,6 +36,9 @@
     <ClCompile Include="ConcreteObservable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FunctionTestObserverAddObserverCase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observable.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ConcreteObservable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionTestObserverAddObserverCase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

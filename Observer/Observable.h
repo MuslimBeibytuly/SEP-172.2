@@ -6,6 +6,7 @@ public:
 	virtual void addObserver(Observer *) = 0;
 	virtual void removeObserver(Observer *) = 0;
 	virtual void notifyObservers() const = 0;
+	virtual size_t count() const = 0;
 	Observable();
 	virtual ~Observable();
 };

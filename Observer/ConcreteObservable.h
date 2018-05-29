@@ -6,6 +6,7 @@ class ConcreteObservable
 {
 	std::vector<Observer *> observers;
 public:
+	size_t count() const override;
 	void addObserver(Observer *) override;
 	void removeObserver(Observer *) override;
 	void notifyObservers() const override;

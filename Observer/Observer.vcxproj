@@ -114,6 +114,7 @@
     <ClCompile Include="ConcreteObserver.cpp" />
     <ClCompile Include="FunctionalTestObserver.cpp" />
     <ClCompile Include="FunctionalTestObserverCase.cpp" />
+    <ClCompile Include="FunctionTestObserverAddObserverCase.cpp" />
     <ClCompile Include="Observable.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -123,6 +124,7 @@
     <ClInclude Include="ConcreteObserver.h" />
     <ClInclude Include="FunctionalTestObserver.h" />
     <ClInclude Include="FunctionalTestObserverCase.h" />
+    <ClInclude Include="FunctionTestObserverAddObserverCase.h" />
     <ClInclude Include="Observable.h" />
     <ClInclude Include="Observer.h" />
   </ItemGroup>
