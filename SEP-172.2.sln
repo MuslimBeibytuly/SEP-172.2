@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Namespaces", "Namespaces\Na
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy", "Proxy\Proxy.vcxproj", "{703CAB44-FDEA-43E4-B963-A49F4D39C60E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedPointer", "SharedPointer\SharedPointer.vcxproj", "{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -496,6 +498,16 @@ Global
 		{703CAB44-FDEA-43E4-B963-A49F4D39C60E}.Release|x64.Build.0 = Release|x64
 		{703CAB44-FDEA-43E4-B963-A49F4D39C60E}.Release|x86.ActiveCfg = Release|Win32
 		{703CAB44-FDEA-43E4-B963-A49F4D39C60E}.Release|x86.Build.0 = Release|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Debug|x64.ActiveCfg = Debug|x64
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Debug|x64.Build.0 = Debug|x64
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Debug|x86.ActiveCfg = Debug|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Debug|x86.Build.0 = Debug|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Release|x64.ActiveCfg = Release|x64
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Release|x64.Build.0 = Release|x64
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Release|x86.ActiveCfg = Release|Win32
+		{4361C5E9-CECD-4C5C-8B3B-5A5061820C76}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
