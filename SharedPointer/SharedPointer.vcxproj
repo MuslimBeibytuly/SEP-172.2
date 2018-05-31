@@ -110,12 +110,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CompositeComponent.cpp" />
     <ClCompile Include="IComponent.cpp" />
     <ClCompile Include="LetterComponent.cpp" />
     <ClCompile Include="shared_pointer.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CompositeComponent.h" />
     <ClInclude Include="IComponent.h" />
     <ClInclude Include="LetterComponent.h" />
     <ClInclude Include="shared_pointer.h" />

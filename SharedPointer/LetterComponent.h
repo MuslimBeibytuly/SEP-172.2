@@ -11,4 +11,3 @@ public:
 	LetterComponent(const char &);
 	~LetterComponent();
 };
-
