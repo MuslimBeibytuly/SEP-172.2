@@ -92,6 +92,22 @@ public:
 			}
 		}
 	}
+	void reverse() 
+	{
+		std::vector<ElementOfLinkedList<type> *> nodes;
+		ElementOfLinkedList<type> * temp = head;
+		while (temp != nullptr) 
+		{
+			nodes.push_back(temp);
+			temp = temp->next;
+		}
+		head = nodes[nodes.size() - 1];
+		for (int i = nodes.size() - 1; i > 0; --i) 
+		{
+			nodes[i]->next = nodes[i - 1];
+		}
+		nodes[0]->next = nullptr;
+	}
 	friend std::ostream & operator << (std::ostream & stream, LinkedList<type> & list)
 	{
 		if (list.head != nullptr)

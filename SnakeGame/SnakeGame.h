@@ -8,10 +8,10 @@ class SnakeGame
 {
 	enum State { Started, Playing, Pause, Quit };
 	State state;
-	Food food;
 	Wall wall;
 	SnakeGame();
 public:
+	Food food;
 	Snake snake;
 	static SnakeGame & getInstance()
 	{

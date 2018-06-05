@@ -1,5 +1,6 @@
 #include "SnakeGame.h"
-
+#include "Serializer.h"
+#include <ctime>
 SnakeGame::SnakeGame()
 {
 	state = Started;
@@ -9,6 +10,8 @@ void SnakeGame::play()
 {
 	state = Playing;
 	Drawer::initialDraw({ wall, food });
+	Serializer::deserialize();
+	srand(time(NULL));
 	while (state == Playing)
 	{
 		snake.clear();
@@ -28,6 +31,15 @@ void SnakeGame::play()
 				break;
 			case 'd':
 				snake.direction = Snake::Right;
+				break;
+			case 'p':
+				system("pause");
+				system("cls");
+				Drawer::initialDraw({ wall, food });
+				break;
+			case 'q':
+				Serializer::serialize();
+				state = Quit;
 				break;
 			default:
 				break;

@@ -2,6 +2,17 @@
 #include <string>
 #include <iostream>
 #include <cassert>
+#include <fstream>
+class X 
+{
+	int i;
+public:
+	X(int i) :i(3) {}
+	void setI(int i) const 
+	{
+		const_cast<X*>(this)->i = i;
+	}
+};
 
 class A
 {
