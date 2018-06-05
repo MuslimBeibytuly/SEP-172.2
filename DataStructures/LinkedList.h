@@ -102,7 +102,7 @@ public:
 			temp = temp->next;
 		}
 		head = nodes[nodes.size() - 1];
-		for (int i = nodes.size() - 1; i > 0; --i) 
+		for (int i = nodes.size() - 1; i > 0; --i)
 		{
 			nodes[i]->next = nodes[i - 1];
 		}
