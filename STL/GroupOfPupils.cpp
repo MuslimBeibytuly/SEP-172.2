@@ -107,6 +107,46 @@ size_t GroupOfPupils::countPupilWithLambda(const int & height) const
 	return cnt;
 }
 
+std::vector<Pupil>::iterator GroupOfPupils::partitionByHeightWithLambda(const int & height)
+{
+	auto bound = std::partition
+	(
+		pupils.begin(), 
+		pupils.end(), 
+		[height](Pupil & pupil) 
+		{
+			return pupil.height <= height;
+		}
+	);
+	return bound;
+}
+
+bool GroupOfPupils::isSorted()
+{
+	return std::is_sorted
+	(
+		pupils.begin(),
+		pupils.end(),
+		[](const Pupil & a, const Pupil & b)
+		{
+			return a.height < b.height;
+		}
+	);
+}
+
+bool GroupOfPupils::nextPermutation()
+{
+	return std::next_permutation
+	(
+		pupils.begin(), 
+		pupils.end(), 
+		[](const Pupil & a, const Pupil & b)
+		{
+			return a.height < b.height;
+		}
+	);
+}
+
 bool GroupOfPupils::PupilComparer::operator()
 (const Pupil & a, const Pupil & b) const
 {

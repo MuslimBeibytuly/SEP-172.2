@@ -33,9 +33,14 @@ public:
 	std::_Vector_const_iterator
 		< std::_Vector_val
 		< std::_Simple_types
-		< Pupil>
+		< Pupil
+		>
 		>
 		> findPupilWithLambda(const int & height) const;
 	size_t countPupilWithLambda(const int & height) const;
+	std::vector<Pupil>::iterator 
+		partitionByHeightWithLambda(const int & height);
+	bool isSorted();
+	bool nextPermutation();
 };
 
