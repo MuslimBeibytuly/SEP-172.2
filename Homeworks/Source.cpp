@@ -77,7 +77,8 @@ void main()
 		if (r1 < r2) {
 			return true;
 		}
-		else {
+		else 
+		{
 			return false;
 		}
 	});
