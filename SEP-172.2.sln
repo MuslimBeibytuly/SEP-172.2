@@ -89,6 +89,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Homeworks", "Homeworks\Home
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STL", "STL\STL.vcxproj", "{7D48DEB7-689E-477C-A2AF-448BF8C86FB6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Review", "Review\Review.vcxproj", "{9E5DE673-E10C-427F-BBFF-64F2BE87548A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -574,6 +576,17 @@ Global
 		{7D48DEB7-689E-477C-A2AF-448BF8C86FB6}.Release|x64.Build.0 = Release|x64
 		{7D48DEB7-689E-477C-A2AF-448BF8C86FB6}.Release|x86.ActiveCfg = Release|Win32
 		{7D48DEB7-689E-477C-A2AF-448BF8C86FB6}.Release|x86.Build.0 = Release|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|Any CPU.Build.0 = Debug|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|x64.ActiveCfg = Debug|x64
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|x64.Build.0 = Debug|x64
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|x86.ActiveCfg = Debug|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Debug|x86.Build.0 = Debug|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Release|x64.ActiveCfg = Release|x64
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Release|x64.Build.0 = Release|x64
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Release|x86.ActiveCfg = Release|Win32
+		{9E5DE673-E10C-427F-BBFF-64F2BE87548A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
