@@ -9,4 +9,3 @@ public:
 	AI(const std::string &);
 	~AI();
 };
-

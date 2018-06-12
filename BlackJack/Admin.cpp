@@ -2,15 +2,23 @@
 
 std::vector<Card> Admin::generateCards(std::array<Card, 9> & cards)
 {
-	std::set<Card> temp;
+	srand(time(NULL));
 	std::vector<Card> result;
-	while (3 > temp.size())
+	while (3 > result.size())
 	{
-		temp.insert(cards[rand() % 9]);
-	}
-	for (Card card : temp)
-	{
-		result.push_back(card);
+		Card temp = cards[rand() % 9];
+		bool duplicate = false;
+		for (Card & card : result) 
+		{
+			if (card.getValue() == temp.getValue()) 
+			{
+				duplicate = true;
+				break;
+			}
+		}
+		if (!duplicate) {
+			result.push_back(temp);
+		}
 	}
 	return result;
 }
