@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-
+#include "Math.h"
 int calculate(
 	const int & a,
 	const int & b,
@@ -12,8 +12,7 @@ int calculate(
 	return operation(a, b);
 }
 
-int main()
-{
+void sample() {
 	int a, b;
 	char o;
 	std::unordered_map<char, int(*)(const int &, const int &)> operations;
@@ -31,13 +30,13 @@ int main()
 	const char * c = strtok(symbols, " ");
 	std::queue<int> operands;
 	std::queue<char> operators;
-	while (c != NULL) 
+	while (c != NULL)
 	{
 		if (isdigit(*c))
 		{
 			operands.push((int)(*c - 48));
 		}
-		else 
+		else
 		{
 			operators.push(*c);
 		}
@@ -45,7 +44,7 @@ int main()
 	}
 	a = operands.front();
 	operands.pop();
-	while (!operands.empty() && !operators.empty()) 
+	while (!operands.empty() && !operators.empty())
 	{
 		b = operands.front();
 		o = operators.front();
@@ -57,11 +56,16 @@ int main()
 	/*std::cin >> a >> o;
 	while (o != '=')
 	{
-		std::cin >> b;
-		a = calculate(a, b, operations[o]);
-		std::cin >> o;
+	std::cin >> b;
+	a = calculate(a, b, operations[o]);
+	std::cin >> o;
 	}
 	std::cout << a << std::endl;*/
 	delete[] symbols;
+}
+int main()
+{
+	Math m(5.0);
+
 	return 0;
 }
