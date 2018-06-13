@@ -1,16 +1,9 @@
 #include <SFML\Graphics.hpp>
+#include "SFMLSnake.h"
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1600, 900), "SFML works!");
-	std::vector<sf::RectangleShape> shapes;
-	shapes.push_back(sf::RectangleShape(sf::Vector2f(200, 200)));
-	shapes[0].setPosition(200, 200);
-	shapes.push_back(sf::RectangleShape(sf::Vector2f(200, 200)));
-	shapes[1].setPosition(0, 200);
-	for (auto & shape : shapes) 
-	{
-		shape.setFillColor(sf::Color::Green);
-	}
+	SFMLSnake snake;
 
 	while (window.isOpen())
 	{
@@ -19,31 +12,32 @@ int main()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+			else if (event.type == sf::Event::KeyPressed) 
 			{
-				shapes[1].setPosition(shapes[0].getPosition());
-				shapes[0].setPosition(shapes[0].getPosition() + sf::Vector2f(-200, 0));
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-			{
-				shapes[1].setPosition(shapes[0].getPosition());
-				shapes[0].setPosition(shapes[0].getPosition() + sf::Vector2f(200, 0));
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-			{
-				shapes[1].setPosition(shapes[0].getPosition());
-				shapes[0].setPosition(shapes[0].getPosition() + sf::Vector2f(0, -200));
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-			{
-				shapes[1].setPosition(shapes[0].getPosition());
-				shapes[0].setPosition(shapes[0].getPosition() + sf::Vector2f(0, 200));
+				float dx = 0, dy = 0;
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+				{
+					dx = -50;
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+				{
+					dx = 50;
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+				{
+					dy = -50;
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+				{
+					dy = 50;
+				}
+				snake.move(dx, dy);
 			}
 		}
 		window.clear();
-		for (auto & shape : shapes)
+		for (auto & point : snake.body)
 		{
-			window.draw(shape);
+			window.draw(point);
 		}
 		window.display();
 	}

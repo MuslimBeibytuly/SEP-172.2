@@ -115,6 +115,7 @@
     <ClCompile Include="IDrawable.cpp" />
     <ClCompile Include="Pixel.cpp" />
     <ClCompile Include="Serializer.cpp" />
+    <ClCompile Include="SFMLSnake.cpp" />
     <ClCompile Include="Snake.cpp" />
     <ClCompile Include="SnakeGame.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -126,6 +127,7 @@
     <ClInclude Include="IDrawable.h" />
     <ClInclude Include="Pixel.h" />
     <ClInclude Include="Serializer.h" />
+    <ClInclude Include="SFMLSnake.h" />
     <ClInclude Include="Snake.h" />
     <ClInclude Include="SnakeGame.h" />
     <ClInclude Include="Wall.h" />
