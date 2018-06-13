@@ -1,9 +1,11 @@
 #include <SFML\Graphics.hpp>
 #include "SFMLSnake.h"
+#include "SFMLFood.h"
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1600, 900), "SFML works!");
 	SFMLSnake snake;
+	SFMLFood food;
 
 	while (window.isOpen())
 	{
@@ -39,6 +41,12 @@ int main()
 		{
 			window.draw(point);
 		}
+		if (snake.body[0].getPosition() == food.body[0].getPosition()) 
+		{
+			snake.eat();
+			food.regenerate(snake.body);
+		}
+		window.draw(food.body[0]);
 		window.display();
 	}
 	return 0;

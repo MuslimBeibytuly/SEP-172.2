@@ -1,13 +1,12 @@
 #pragma once
 #include <vector>
+#include <cstdlib>
 #include <SFML\Graphics\RectangleShape.hpp>
-class SFMLSnake
+class SFMLFood
 {
 public:
 	std::vector<sf::RectangleShape> body;
-	void move(const float & x, const float & y);
-	void eat();
-	SFMLSnake();
-	~SFMLSnake();
+	void regenerate(std::vector<sf::RectangleShape> &);
+	SFMLFood();
+	~SFMLFood();
 };
-
