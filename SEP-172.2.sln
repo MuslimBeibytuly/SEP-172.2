@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileManager", "FileManager\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlackJack", "BlackJack\BlackJack.vcxproj", "{FBFF505A-0009-4632-83F9-4FAF12410C24}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPFP", "CPPFP\CPPFP.vcxproj", "{8837DF63-991F-49EB-94D0-3CEF30B7E917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -626,6 +628,17 @@ Global
 		{FBFF505A-0009-4632-83F9-4FAF12410C24}.Release|x64.Build.0 = Release|x64
 		{FBFF505A-0009-4632-83F9-4FAF12410C24}.Release|x86.ActiveCfg = Release|Win32
 		{FBFF505A-0009-4632-83F9-4FAF12410C24}.Release|x86.Build.0 = Release|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|Any CPU.Build.0 = Debug|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|x64.ActiveCfg = Debug|x64
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|x64.Build.0 = Debug|x64
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|x86.ActiveCfg = Debug|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Debug|x86.Build.0 = Debug|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Release|Any CPU.ActiveCfg = Release|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Release|x64.ActiveCfg = Release|x64
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Release|x64.Build.0 = Release|x64
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Release|x86.ActiveCfg = Release|Win32
+		{8837DF63-991F-49EB-94D0-3CEF30B7E917}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

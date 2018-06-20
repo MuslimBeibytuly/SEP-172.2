@@ -1,7 +1,5 @@
 #include "SFMLFood.h"
 
-
-
 void SFMLFood::regenerate(std::vector<sf::RectangleShape> & snake)
 {
 	body[0].setPosition((rand() % 32) * 50, (rand() % 18) * 50);
@@ -20,8 +18,6 @@ SFMLFood::SFMLFood()
 	body[0].setPosition(200, 200);
 	body[0].setFillColor(sf::Color::Cyan);
 }
-
-
 
 SFMLFood::~SFMLFood()
 {

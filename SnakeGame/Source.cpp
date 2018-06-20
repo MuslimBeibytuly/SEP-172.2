@@ -14,6 +14,7 @@ int main()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+			if( sf::Keyboard::Space)
 			else if (event.type == sf::Event::KeyPressed) 
 			{
 				float dx = 0, dy = 0;
